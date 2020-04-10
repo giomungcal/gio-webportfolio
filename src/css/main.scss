@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Product';
+    src: local('Product'), url(../fonts/ProductSans.ttf) format('truetype');
+  }
+  
+$dark-blue: #0E153A;
+$mid-blue: #4F69F0;
+$light-blue: #22D1EE;
+$yellow: #FFCC00;
+
+
+body{
+    font-size: 16px;
+    margin: 0;
+    font-family: Product;
+    color: white;
+    background-color: $dark-blue;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.6em;
+}
+
+.container{
+    text-align: center;
+    // padding: .8em 1.2em;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3em 1.3em;
+    margin: .8em 1.2em;
+
+    &__title{
+        margin: 0;
+        font-size: 1.2em;
+    }
+}
+
+.hero{
+    padding-top: 1em;
+    margin: .8em 1.2em 2em;
+
+    &__photo{
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+
+    &__hi{
+        margin-top: 3em;
+        width: 8em;
+        font-size: .8em;
+    }
+
+    &__name{
+        margin: 0;
+        font-size: 2.5em;
+        color: $light-blue;
+        font-weight: bold;
+
+        &:before{
+            content: "";
+            background-color: white;
+            width:100%;
+            margin-top: -2px;
+            height: 60px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+    }
+
+    &__desc{
+        padding: 1.5em;
+        line-height: 1.5em;
+
+        span{
+            color: $light-blue;
+        }
+    }
+
+    &__btnlist{
+        margin-top: 10px;
+    }
+
+    &__btn{
+        color: $dark-blue;
+        font-size: .9em;
+        padding: .7em;
+        margin: 0 50px;
+        margin-bottom: 1em;
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 25px;
+
+        &--active{
+            background-color: #38437D;
+            color: $light-blue;
+        }
+    }
+}
+
+.skills{
+    background-image: url(../imgs/whitebg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: $dark-blue;
+    padding: 2em;
+    z-index: -10;
+
+    &__title{
+        font-size: 2.1em;
+        margin-top: 1.1em;
+    }
+
+    &__list{
+        text-align: left;
+    }
+
+    &__items{
+        
+        h3{
+            padding-left: 7px;
+            font-size: .8em;
+            border-left: 2px solid $yellow;
+        }
+
+        img{
+            height: 30px;
+            padding-left: 15px;
+        }
+
+        h4{
+            padding-left: 15px;
+            font-size: .7em;
+            margin-top: 7px;
+        }
+
+        &--react{
+            img{
+                height: 20px;
+            }
+        }
+
+        &--mobileapp{
+            img{
+                height: 25px;
+            }
+        }
+
+    }
+    
+}
+
+.projects{
+    padding: 2.2em;
+
+    &__title{
+        line-height: .8em;
+        margin-bottom: 1em;
+
+        span{
+            // font-size: .8em;
+            color: lighten($light-blue, 25%);
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 10px;
+            // background-color: beige;
+            border-bottom: 1.5px solid $yellow;
+            left: 0;
+            right: 0;
+            margin: 0 auto ;
+            margin-top: -7px;
+            // top: 0;
+            z-index: -1;
+        }
+    }
+
+    &__tile{
+        background-color: white;
+        padding: .8em;
+        color: $dark-blue;
+        margin-bottom: 2em;
+        border-radius: 12px;
+        box-shadow: 0 -2px 10px darken($dark-blue, 10%);
+        display: block;
+
+        &--title{
+            width: calc(100% - 70px);
+            float: right;
+            margin: 15px 0;
+        }
+
+        &--scs{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        p{
+            font-size: .75em;
+            margin: 0 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            span{
+                color: darken($mid-blue, 23%);
+            }
+        }
+
+        &:first-child{  
+
+            &:before{
+                content: "";
+                position: absolute;
+                left: 13px;
+                margin-top: -40px;
+                width: 120px;
+                height: 120px;
+                background-image: url(../imgs/electroknight.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                color: wheat;
+
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(2px 2px 2px #222);
+                
+            }
+        }
+
+        &:nth-child(2){
+
+            &:before{
+                content: "";
+                position: absolute;
+                left: 10px;
+                margin-top: -40px;
+                padding: 10px;
+                width: 80px;
+                height: 80px;
+                // background-color: white;
+                background-image: url(../imgs/Clogo.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                color: wheat;
+
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(2px 2px 2px #222);
+                
+            }
+        }
+    }
+    
+}
