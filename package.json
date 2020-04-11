@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://giomungcal.github.io/gio-webportfolio",
-  "homepage": "http://giomungcal.github.io/react-gh-pages",
-  "homepage": "http://gitname.github.io/react-gh-pages",
-  "homepage": "http://gitname.github.io/gio-portfolio",
-  "homepage": "http://gitname.github.io/react-gh-pages",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
