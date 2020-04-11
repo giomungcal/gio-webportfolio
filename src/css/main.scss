@@ -172,13 +172,6 @@ p{
     
 }
 
-.header__container{
-    // background-color: rgba(221, 221, 221, 0.4);
-    // position: sticky;
-    // top: 0;
-    // z-index: 3;
-}
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -264,6 +257,8 @@ p{
     padding-top: 1em;
     margin: .8em 1.2em 2em;
 
+    position: relative;
+
     @include ipad{
         display: grid;
         grid-template-areas: "texts photo";
@@ -326,22 +321,25 @@ p{
         font-family: ProductBold;
 
         animation: nameAnim .9s forwards 0s ease-in-out;
-
+        text-shadow: 1px 1px 3px rgb(238, 230, 230);
 
         &:before{
             content: "";
             background-color: white;
-            width: 522px;
+            width: 100%;
             margin-top: -3px;
             height: 60px;
-            margin-left: -40px;
-            z-index: -1;
             left: 0;
             right: 0;
+            z-index: -1;
             position: absolute;
+            border-radius: 20px;
 
             @include ipad{
-                margin-left: -42%;
+                // margin-left: -42%;
+                position: fixed;
+                left: -100px;
+                width: 465px;
                 height: 75px;
                 margin-top: 3px;
                 border-radius: 20px;
@@ -389,6 +387,10 @@ p{
         text-transform: uppercase;
         font-weight: bold;
         border-radius: 25px;
+
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+
 
         &--projects{
             background-color: #38437D;

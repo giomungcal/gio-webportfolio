@@ -76,7 +76,7 @@ function App() {
         </div>
 
         <img className="hover show-desktop hide-mobile" src={hover} alt="hover"/>
-        <a href="#home"><div className="topbtn">&nbsp;<span role="img">☝️</span>&nbsp;</div></a>
+        {/* <a href="#home"><div className="topbtn">&nbsp;<span role="img">☝️</span>&nbsp;</div></a> */}
 
         <div className="skills" id="skills">
           <h1 className="skills__title">Skills</h1>

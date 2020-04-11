@@ -308,6 +308,7 @@ p {
 .hero {
   padding-top: 1em;
   margin: .8em 1.2em 2em;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -385,24 +386,27 @@ p {
   font-family: ProductBold;
   -webkit-animation: nameAnim .9s forwards 0s ease-in-out;
           animation: nameAnim .9s forwards 0s ease-in-out;
+  text-shadow: 1px 1px 3px #eee6e6;
 }
 
 .hero__name:before {
   content: "";
   background-color: white;
-  width: 522px;
+  width: 100%;
   margin-top: -3px;
   height: 60px;
-  margin-left: -40px;
-  z-index: -1;
   left: 0;
   right: 0;
+  z-index: -1;
   position: absolute;
+  border-radius: 20px;
 }
 
 @media (min-width: 768px) {
   .hero__name:before {
-    margin-left: -42%;
+    position: fixed;
+    left: -100px;
+    width: 465px;
     height: 75px;
     margin-top: 3px;
     border-radius: 20px;
@@ -459,6 +463,8 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 25px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(2px 2px 2px #222);
 }
 
 .hero__btn--projects {
