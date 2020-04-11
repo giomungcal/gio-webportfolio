@@ -21,7 +21,10 @@ $yellow: #FFCC00;
 $iphonese: 320px;
 $iphone6: 360px;
 $pixel: 400px;
-$ipad: 700px;
+$ipad: 750px;
+$web1: 810px;
+$web2: 900px;
+$webmax: 1000px;
 
 @mixin iphonese{
     @media (min-width: #{$iphonese}){
@@ -43,6 +46,24 @@ $ipad: 700px;
 
 @mixin ipad{
     @media (min-width: #{$ipad}){
+        @content;
+    }
+}
+
+@mixin web1{
+    @media (min-width: #{$web1}){
+        @content;
+    }
+}
+
+@mixin web2{
+    @media (min-width: #{$web2}){
+        @content;
+    }
+}
+
+@mixin webmax{
+    @media (min-width: #{$webmax}){
         @content;
     }
 }
@@ -110,6 +131,18 @@ body{
     @include ipad{
         font-size: 19px;
     }
+
+    @include web1(){
+        font-size: 21px;
+    }
+
+    @include web2(){
+        font-size: 22px;
+    }
+
+    @include webmax{
+        font-size: 24px;
+    }
 }
 
 ul{
@@ -153,6 +186,10 @@ p{
     @include ipad{
         margin-top: 2.2em;
         height: 1.5em;
+    }
+
+    @include webmax{
+        height: 1.3em;
     }
 }
 
@@ -299,6 +336,9 @@ p{
             margin: 0 auto;
         }
 
+        @include webmax{
+            width: calc(100% - 40px);
+        }
         animation: photoAnim .7s forwards 0s ease-in-out;
     }
 
@@ -306,11 +346,18 @@ p{
         margin-top: 3em;
         width: 8em;
         font-size: .8em;
+        z-index: 10;
 
         @include ipad{
             float: left;
             display: block;
             margin-bottom: -8px;
+        }
+
+        @include webmax(){
+            margin-top: 4em;
+            width: 9.5em;
+            margin-bottom: -28px;
         }
     }
 
@@ -344,10 +391,26 @@ p{
                 margin-top: 3px;
                 border-radius: 20px;
             }
+
+            @include web1(){
+                left: -400px;
+                height: 79px;
+                width: 790px;
+            }
+
+            @include webmax{
+                margin-top: 9px;
+                width: 990px;
+                height: 100px;
+            }
         }
 
         @include ipad{
             font-size: 3em;
+        }
+
+        @include webmax{
+            font-size: 3.5em;
         }
     }
 
@@ -365,6 +428,15 @@ p{
             padding-top: .5em;
             line-height: 1.4em;
             font-size: .6em;
+        }
+
+        @include web1(){
+            padding-top: .2em;
+            font-size: .613em;
+        }
+
+        @include webmax{
+            font-size: .63em;
         }
     }
 
@@ -434,7 +506,7 @@ p{
 
 .skills{
     background-image: url(../imgs/whitebg-mobile.png);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: 0;
     color: $dark-blue;
@@ -443,12 +515,16 @@ p{
 
     @include ipad{
         background-image: url(../imgs/whitebg-web.png);
-        background-size: cover;
+        background-size: 100%;
         padding-top: 3.5em;
         padding-bottom: 1.1em;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    @include web2{
+        padding-top: 4em;
     }
 
     &__title{
@@ -468,9 +544,18 @@ p{
         }
 
         @include ipad{
-            font-size: 17px;
+            font-size: .9em;
             margin: auto 0;
         }
+
+        @include web2(){
+            font-size: 1.2em;
+        }
+
+        @include webmax(){
+            font-size: 1    em;
+        }
+
     }
 
     &__items{
@@ -479,9 +564,13 @@ p{
             padding-left: 7px;
             font-size: .8em;
             border-left: 2px solid $yellow;
-
+            
             @include ipad{
                 padding-left: 11px;
+            }
+
+            @include web2(){
+                margin: .6em auto;
             }
         }
 
@@ -734,13 +823,14 @@ p{
 }
 
 .about{
-    padding: 60px 30px 90px;
+    padding: 60px 30px;
 
     @include ipad{
         max-width: 600px;
-        margin: auto;
+        margin: 3em auto;
         display: grid;
         grid-template-columns: 45% 55%;
+        align-content: center;
     }
 
     &__photo{
@@ -792,6 +882,26 @@ p{
                 margin-right: 114px;
                 left: unset;
             }
+
+            @include web1{
+                margin-top: 19px;
+                width: 217px;
+                margin-right: 90px;
+            }
+
+            @include web2{
+                width: 228px;
+                margin-right: 80px;
+            }
+
+            @include webmax{
+                width: 217px;
+                margin-right: 90px;
+            }
+        }
+
+        @include webmax(){
+            font-size: 1.4em;
         }
     }
 
