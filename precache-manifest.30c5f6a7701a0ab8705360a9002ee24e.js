@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a5df22453640c66298cedb78544462d",
+    "revision": "7ba4d0b5dddf92891bffb650f566a3c4",
     "url": "/gio-webportfolio/index.html"
   },
   {
-    "revision": "e7896c0e0fd35471b044",
-    "url": "/gio-webportfolio/static/css/main.c9452cde.chunk.css"
+    "revision": "7bff8a760de3a44fcbc0",
+    "url": "/gio-webportfolio/static/css/main.4a924ef2.chunk.css"
   },
   {
-    "revision": "34f4a4826e19862b7a77",
-    "url": "/gio-webportfolio/static/js/2.de616e2b.chunk.js"
+    "revision": "9b86d26b4f1e4e4ad7b5",
+    "url": "/gio-webportfolio/static/js/2.f1572c31.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/gio-webportfolio/static/js/2.de616e2b.chunk.js.LICENSE.txt"
+    "url": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7896c0e0fd35471b044",
-    "url": "/gio-webportfolio/static/js/main.0baa501e.chunk.js"
+    "revision": "7bff8a760de3a44fcbc0",
+    "url": "/gio-webportfolio/static/js/main.f89cca5c.chunk.js"
   },
   {
     "revision": "e1832e5adcd8562a96f2",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32e5e5043e8fcb473d1464ac73cf598f",
     "url": "/gio-webportfolio/static/media/Clogo.32e5e504.png"
+  },
+  {
+    "revision": "bb0e8dc2e3b49518ce45d28e2cd668cf",
+    "url": "/gio-webportfolio/static/media/GioMungcal-CV.bb0e8dc2.pdf"
   },
   {
     "revision": "eae9c18cee82a8a1a52e654911f8fe83",
