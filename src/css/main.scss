@@ -25,6 +25,7 @@ $ipad: 750px;
 $web1: 810px;
 $web2: 900px;
 $webmax: 1000px;
+$webmaxplus: 1250px;
 
 @mixin iphonese{
     @media (min-width: #{$iphonese}){
@@ -64,6 +65,12 @@ $webmax: 1000px;
 
 @mixin webmax{
     @media (min-width: #{$webmax}){
+        @content;
+    }
+}
+
+@mixin webmaxplus{
+    @media (min-width: #{$webmaxplus}){
         @content;
     }
 }
@@ -357,7 +364,13 @@ p{
         @include webmax(){
             margin-top: 4em;
             width: 9.5em;
-            margin-bottom: -28px;
+            margin-bottom: -19px;
+        }
+
+        @include webmaxplus(){
+            margin-top: 4.4em;
+            width: 9.5em;
+            margin-bottom: -23px;
         }
     }
 
@@ -369,6 +382,23 @@ p{
 
         animation: nameAnim .9s forwards 0s ease-in-out;
         text-shadow: 1px 1px 3px rgb(238, 230, 230);
+
+        @include ipad{
+            font-size: 3em;
+        }
+
+        @include web2{
+            font-size: 2.8em;
+        }
+
+        @include webmax{
+            font-size: 3.37em;
+        }
+
+        @include webmaxplus{
+            font-size: 4em;
+        }
+
 
         &:before{
             content: "";
@@ -403,15 +433,15 @@ p{
                 width: 990px;
                 height: 100px;
             }
+
+            @include webmaxplus{
+                margin-top: 13px;
+                width: 1020px;
+                height: 110px;
+            }
         }
 
-        @include ipad{
-            font-size: 3em;
-        }
-
-        @include webmax{
-            font-size: 3.5em;
-        }
+        
     }
 
     &__desc{
@@ -437,6 +467,10 @@ p{
 
         @include webmax{
             font-size: .63em;
+        }
+
+        @include webmaxplus{
+            font-size: .8em;
         }
     }
 
