@@ -2,12 +2,45 @@
     font-family: 'Product';
     src: local('Product'), url(../fonts/ProductSans.ttf) format('truetype');
   }
+
+@font-face {
+font-family: 'ProductBold';
+src: local('ProductBold'), url(../fonts/ProductSansBold.ttf) format('truetype');
+}
   
 $dark-blue: #0E153A;
 $mid-blue: #4F69F0;
 $light-blue: #22D1EE;
 $yellow: #FFCC00;
 
+$iphonese: 320px;
+$iphone6: 375px;
+$pixel: 411px;
+$ipad: 768px;
+
+@mixin iphonese{
+    @media (min-width: #{$iphonese}){
+        @content;
+    }
+}
+
+@mixin iphone6{
+    @media (min-width: #{$iphone6}){
+        @content;
+    }
+}
+
+@mixin pixel{
+    @media (min-width: #{$pixel}){
+        @content;
+    }
+}
+
+@mixin ipad{
+    @media (min-width: #{$ipad}){
+        @content;
+    }
+}
 
 body{
     font-size: 16px;
@@ -15,6 +48,14 @@ body{
     font-family: Product;
     color: white;
     background-color: $dark-blue;
+
+    @include pixel(){
+        font-size: 18px;
+    }
+
+    @include ipad{
+        font-size: 19px;
+    }
 }
 
 ul{
@@ -33,6 +74,8 @@ p{
 
 .container{
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
     // padding: .8em 1.2em;
 }
 
@@ -46,9 +89,28 @@ p{
     padding: 1.3em 1.3em;
     margin: .8em 1.2em;
 
+    @include iphonese(){
+        margin: .3em 1.2em .1em;
+    }
+
+    @include ipad{
+        width: 650px;
+        margin: .8em auto .3em;
+    }
+
     &__title{
         margin: 0;
         font-size: 1.2em;
+
+        @include iphonese(){
+            font-size: 1em;
+        }
+    }
+
+    &__hamburger{
+        @include iphonese(){
+            height: 15px;
+        }
     }
 }
 
@@ -56,47 +118,112 @@ p{
     padding-top: 1em;
     margin: .8em 1.2em 2em;
 
+    @include ipad{
+        display: grid;
+        grid-template-areas: "texts photo";
+        grid-template-columns: 7fr 5.5fr;
+
+        max-width: calc(100vw - 20%);
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    p, h2{
+        @include ipad(){
+            text-align: left;
+        }
+    }
+
+    &__header{
+        grid-area: texts;
+
+        @include ipad{
+            display: grid;
+        }
+    }
+
     &__photo{
-        width: calc(100% - 40px);
+        grid-area: photo;
+        width: calc(100vw - 30%);
         margin: auto;
+
+        @include iphonese(){
+            width: calc(100vw - 45%);
+        }
+
+        @include ipad{
+            object-fit: cover;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &__hi{
         margin-top: 3em;
         width: 8em;
         font-size: .8em;
+
+        @include ipad{
+            float: left;
+            display: block;
+            margin-bottom: -8px;
+        }
     }
 
     &__name{
         margin: 0;
-        font-size: 2.5em;
+        font-size: 2.4em;
         color: $light-blue;
-        font-weight: bold;
+        font-family: ProductBold;
 
         &:before{
             content: "";
             background-color: white;
             width:100%;
-            margin-top: -2px;
+            margin-top: -3px;
             height: 60px;
             z-index: -1;
             left: 0;
             right: 0;
             position: absolute;
+
+            @include ipad{
+                margin-left: -42%;
+                height: 75px;
+                margin-top: 3px;
+                border-radius: 20px;
+            }
+        }
+
+        @include ipad{
+            font-size: 3em;
         }
     }
 
     &__desc{
         padding: 1.5em;
         line-height: 1.5em;
+        font-size: .7em;
 
         span{
             color: $light-blue;
+        }
+
+        @include ipad{
+            padding: 0;
+            padding-top: .5em;
+            line-height: 1.4em;
+            font-size: .6em;
         }
     }
 
     &__btnlist{
         margin-top: 10px;
+
+        @include iphone6{
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 
     &__btn{
@@ -110,9 +237,42 @@ p{
         font-weight: bold;
         border-radius: 25px;
 
-        &--active{
+        &--projects{
             background-color: #38437D;
             color: $light-blue;
+            transition: .5s;
+
+            &:hover{
+                background-color: white;
+                color: $dark-blue;
+            }
+        }
+
+        &--resume{
+            transition: .5s;
+
+            &:hover{
+                background-color: #38437D;
+                color: $light-blue;
+            }
+        }
+
+        @include iphone6{
+            padding: .8em 2.6em;
+            font-size: .75em;
+            margin: 0;
+        }
+
+        @include pixel{
+            padding: .8em 2.6em;
+            font-size: .75em;
+            margin: 0;
+        }
+
+        @include ipad{
+            padding: .65em 3.2em;
+            font-size: .65em;
+            margin: 0;
         }
     }
 }
@@ -126,13 +286,37 @@ p{
     padding: 2em;
     z-index: -10;
 
+    @include ipad{
+        background-image: url(../imgs/whitebg-web.png);
+        background-size: cover;
+        margin-top: 1em;
+        padding-top: 3.5em;
+        padding-bottom: 1.1em;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     &__title{
         font-size: 2.1em;
         margin-top: 1.1em;
+
+        @include ipad{
+            align-self: center;
+        }
     }
 
     &__list{
         text-align: left;
+
+        @include pixel(){
+            margin-left: 20px;
+        }
+
+        @include ipad{
+            font-size: 17px;
+            margin: auto 0;
+        }
     }
 
     &__items{
@@ -141,11 +325,19 @@ p{
             padding-left: 7px;
             font-size: .8em;
             border-left: 2px solid $yellow;
+
+            @include ipad{
+                padding-left: 11px;
+            }
         }
 
         img{
             height: 30px;
             padding-left: 15px;
+
+            @include ipad{
+                height: 26px;
+            }
         }
 
         h4{
@@ -157,6 +349,10 @@ p{
         &--react{
             img{
                 height: 20px;
+
+                @include ipad{
+                    height: 18px;
+                }
             }
         }
 
@@ -171,11 +367,15 @@ p{
 }
 
 .projects{
-    padding: 2.2em;
+    padding: 2.1em;
 
     &__title{
         line-height: .8em;
         margin-bottom: 1em;
+
+        @include ipad{
+            font-size: 3em;
+        }
 
         span{
             // font-size: .8em;
@@ -187,14 +387,25 @@ p{
             position: absolute;
             width: 220px;
             height: 10px;
-            // background-color: beige;
             border-bottom: 1.5px solid $yellow;
             left: 0;
             right: 0;
             margin: 0 auto ;
             margin-top: -7px;
-            // top: 0;
             z-index: -1;
+
+            @include ipad{
+                width: 450px;
+            }
+        }
+    }
+
+    &__container{
+        @include ipad{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            position: relative;
+            padding: 1em;
         }
     }
 
@@ -207,10 +418,25 @@ p{
         box-shadow: 0 -2px 10px darken($dark-blue, 10%);
         display: block;
 
+        @include ipad{
+            margin: .5em;
+            font-size: 20px;
+        }
+
         &--title{
             width: calc(100% - 70px);
             float: right;
             margin: 15px 0;
+
+            @include iphonese{
+                margin: 7px 0;
+                width: calc(100% - 90px);
+            }
+
+            @include pixel(){
+                width: calc(100% - 120px);
+                margin: 4px 0 15px;
+            }
         }
 
         &--scs{
@@ -218,24 +444,32 @@ p{
             margin-top: 10px;
         }
 
+        &--space{
+            font-size: .5em;
+            width: 100%;
+            visibility: hidden;
+            margin: 0;
+        }
+
         p{
-            font-size: .75em;
+            font-size: .65em;
             margin: 0 10px;
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
 
             span{
-                color: darken($mid-blue, 23%);
+                color: lighten($dark-blue, 30%);
             }
         }
 
         &:first-child{  
-
+            
             &:before{
                 content: "";
                 position: absolute;
-                left: 13px;
+                // left: 13px;
                 margin-top: -40px;
+                margin-left: -70px;
                 width: 120px;
                 height: 120px;
                 background-image: url(../imgs/electroknight.png);
@@ -254,12 +488,11 @@ p{
             &:before{
                 content: "";
                 position: absolute;
-                left: 10px;
                 margin-top: -40px;
+                margin-left: -60px;
                 padding: 10px;
-                width: 80px;
-                height: 80px;
-                // background-color: white;
+                width: 95px;
+                height: 95px;
                 background-image: url(../imgs/Clogo.png);
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -270,6 +503,169 @@ p{
                 
             }
         }
+
+        &:nth-child(3){
+            
+            &:before{
+                content: "";
+                position: absolute;
+                // left: 19px;
+                margin-left: -160px;
+                margin-top: -30px;
+                padding: 10px;
+                width: 80px;
+                height: 80px;
+                background-image: url(../imgs/giologo.PNG);
+                background-size: contain;
+                background-repeat: no-repeat;
+                color: wheat;
+
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(2px 2px 2px #222);
+                
+            }
+
+            p{
+                margin: 0;
+            }
+
+            .adobexd{
+                color: #FF26BE;
+            }
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
+}
+
+.message{
+    text-align: left;
+    padding: 100px 20px;
+    color: white;
+    background-color: darken($dark-blue, 3%);
+    border-top: solid 2px #FFCC00;
+    border-bottom: solid 2px #FFCC00;
+    text-align: center;
+
+    @include ipad{
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+    }
+
+    h1{
+        line-height: 1em;
+        font-size: 4.8em;
+        color: $light-blue;
+        color: white;
+        text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
     
+        @include iphonese{
+            font-size: 5.5em;
+        }
+    }
+
+    h3{
+        margin-top: 30px;
+        font-size: .7em;
+
+        @include ipad{
+            align-self: center;
+            font-size: 1em;
+            text-align: left;
+        }
+    }
+}
+
+.about{
+    padding: 60px 30px 90px;
+
+    @include ipad{
+        max-width: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    &__photo{
+        margin-top: 10px;
+        width: calc(100vw - 70%);
+
+        @include ipad{
+            object-fit: contain;
+            width: 85%;
+            margin: auto;
+        }
+    }
+
+    &__info{
+        @include ipad{
+            text-align: left;
+            margin-left: 1em;
+            align-self: center;
+
+            position: relative;
+        }
+    }
+
+    &__name{
+        font-size: 1.4em;
+        line-height: .7em;
+        font-weight: normal;
+
+        @include ipad(){
+            font-size: 1.6em;
+            line-height: .1em;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            // height: 2px;
+            width: 50%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            margin-top: 22px;
+            border-bottom: solid 1.5px lighten($yellow, 25%);
+
+            @include ipad{
+                content: "";
+                width: 198px;
+                margin-top: 17px;
+                margin-right: 143px;
+                left: unset;
+            }
+        }
+    }
+
+    &__school{
+        font-weight: normal;
+        font-size: .6em;
+
+        @include ipad{
+            font-size: .7em;
+            line-height: 1.1em;
+        }
+    }
+
+    &__list{
+        display: flex;
+        margin-top: 20px;
+
+        justify-content: center;
+
+        @include ipad{
+            float: left;
+            margin-top: 0;
+        }
+    }
+
+    &__links{
+        margin: 0 5px;
+        img{
+            height: 20px;
+        }
+    }
 }

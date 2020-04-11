@@ -48,7 +48,7 @@ function App() {
         <div className="header">
           <h1 className="header__title">gio-portfolio</h1>
           <nav className="header__nav">
-            <a className="header__hamburger hide-desktop" href="#"><img src={hamburger} alt="hamburger"/></a>
+            <a href="#"><img className="header__hamburger hide-desktop" src={hamburger} alt="hamburger"/></a>
             <ul className="header__list show-desktop hide-mobile">
               <li className="hide-desktop"><a href="#">X</a></li>
               <li className="header__link header__link--active"><a href="#">home</a></li>
@@ -67,13 +67,13 @@ function App() {
             <p className="hero__desc">I am a graduating student who wants to pursue my passion, eager to hone <span>front-end</span> web development, <span>UI</span> designing , and <span>project management</span> skills as early as possible in order to contribute to my fullest potential in any organization that I will join.
             </p>
             <ul className="hero__btnlist">
-              <li className="hero__btn hero__btn--active" href="#">resume</li>
-              <li className="hero__btn" href="#">projects</li>
+              <a href="#"><li className="hero__btn hero__btn--projects" href="#">projects</li></a>
+              <a href="#"><li className="hero__btn hero__btn--resume" href="#">resume</li></a>
             </ul>
           </div>
         </div>
 
-        <img className="hover hide hide-mobile" src={hover} alt="hover"/>
+        <img className="hover show-desktop hide-mobile" src={hover} alt="hover"/>
   
         <div className="skills">
           <h1 className="skills__title">Skills</h1>
@@ -106,7 +106,7 @@ function App() {
   
         <div className="projects">
           <h1 className="projects__title"><span>proj</span>ects<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>so</span> far..</h1>
-          <div className="projects__mobile hide-desktop">
+          <div className="projects__container hide-desktop">
             <div className="projects__tile">
               <img className="projects__tile--title" src={ektitle} alt="ek-title"/>
               <img  className="projects__tile--scs" src={ekimgs} alt="electroknight"/><br />
@@ -123,7 +123,9 @@ function App() {
             <div className="projects__tile">
               <img className="projects__tile--title" src={portfoliotitle} alt="portfolio-title"/>
               {/* <img  className="projects__tile--scs" src={cedulaimgs} alt="cedula"/><br /> */}
-              <p><strong>Developed with <span><br />HTML, CSS, JS</span></strong><br /><br />A system which provides a digital filing of forms for community tax certificate or cedula application, a computerized queueing stub, and a centralized database that will serve as a repository for all related transactions. 
+              <div className="projects__tile--space">spacespacespacespacespacespace</div>
+              <p><strong>Developed with <span><br />HTML, CSS, React JS <br /></span>Designed with <span className="adobexd">Adobe XD</span></strong><br /><br />
+              This is my personal web portfolio developed and designed with the collective knowledge i have of web developmment so far.<br/><br/> I've applied my self-directed learnings, ranging from the different principles of UI designing to typography and color scheming, also, this webpage is designed responsive for different viewports, without the use of any framework.<br /><br />Used SASS, BEM. React JS implemented with Context API, Hooks, and Router.
               </p>
             </div>
           </div>
@@ -131,17 +133,22 @@ function App() {
             <h1>DESKTOP</h1>
           </div>
         </div>
-  
+
+        <div className="message">
+          <h1>let's<br/>talk.</h1>
+          <h3>📠 +639953650731<br/>📪 gcmungcal@gmail.com</h3>
+        </div>
+
         <div className="about">
           <img className="about__photo" src={idpic} alt="idpic"/>
           <div className="about__info">
             <h1 className="about__name">Giomar C. Mungcal</h1>
-            <h3 className="about_school">BS Computer Engineering<br />Pamantasan ng Lungsod ng Maynila</h3>
-            <ul className="about_list">
-              <li className="about_links"><a href="https://www.messenger.com/t/gio.mungcal" target="_blank"><img src={fb} alt="fb"/></a></li>
-              <li className="about_links"><a href="https://www.linkedin.com/in/giomungcal" target="_blank"><img src={linkedin} alt="linkedin"/></a></li>
-              <li className="about_links"><a href="https://github.com/giomungcal" target="_blank"><img src={github} alt="github"/></a></li>
-              <li className="about_links"><a href="mailto:gcmungcal@gmail.com" target="_blank"><img src={gmail} alt="gmail"/></a></li>
+            <h3 className="about__school">BS Computer Engineering<br />Pamantasan ng Lungsod ng Maynila</h3>
+            <ul className="about__list">
+              <li className="about__links"><a href="https://www.messenger.com/t/gio.mungcal" target="_blank"><img src={fb} alt="fb"/></a></li>
+              <li className="about__links"><a href="https://www.linkedin.com/in/giomungcal" target="_blank"><img src={linkedin} alt="linkedin"/></a></li>
+              <li className="about__links"><a href="https://github.com/giomungcal" target="_blank"><img src={github} alt="github"/></a></li>
+              <li className="about__links"><a href="mailto:gcmungcal@gmail.com" target="_blank"><img src={gmail} alt="gmail"/></a></li>
             </ul>
           </div>
         </div>
