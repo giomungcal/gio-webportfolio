@@ -136,13 +136,13 @@ body {
   background-color: #0E153A;
 }
 
-@media (min-width: 411px) {
+@media (min-width: 400px) {
   body {
     font-size: 18px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   body {
     font-size: 19px;
   }
@@ -172,13 +172,13 @@ p {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hide-mobile {
     display: unset;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hide-desktop {
     display: none;
   }
@@ -189,7 +189,7 @@ p {
           animation: hoverAnim 1s infinite 0s ease-in-out;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hover {
     margin-top: 2.2em;
     height: 1.5em;
@@ -230,7 +230,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .header {
     max-width: calc(100vw - 20%);
     margin: .8em auto .3em;
@@ -254,7 +254,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .header__list, .header a {
     color: #B4BBBC;
     display: -webkit-box;
@@ -274,7 +274,7 @@ p {
   transition: .5s;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .header__link {
     padding-left: 2.1em;
   }
@@ -311,7 +311,7 @@ p {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero {
     display: -ms-grid;
     display: grid;
@@ -324,7 +324,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero p, .hero h2 {
     text-align: left;
   }
@@ -334,7 +334,7 @@ p {
   grid-area: texts;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__header {
     display: -ms-grid;
     display: grid;
@@ -356,7 +356,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__photo {
     -o-object-fit: cover;
        object-fit: cover;
@@ -371,7 +371,7 @@ p {
   font-size: .8em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__hi {
     float: left;
     display: block;
@@ -402,7 +402,7 @@ p {
   border-radius: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__name:before {
     position: fixed;
     left: -100px;
@@ -413,7 +413,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__name {
     font-size: 3em;
   }
@@ -429,7 +429,7 @@ p {
   color: #22D1EE;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__desc {
     padding: 0;
     padding-top: .5em;
@@ -442,7 +442,7 @@ p {
   margin-top: 10px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 360px) {
   .hero__btnlist {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,7 +489,7 @@ p {
   color: #22D1EE;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 360px) {
   .hero__btn {
     padding: .8em 2.6em;
     font-size: .75em;
@@ -497,7 +497,7 @@ p {
   }
 }
 
-@media (min-width: 411px) {
+@media (min-width: 400px) {
   .hero__btn {
     padding: .8em 2.6em;
     font-size: .75em;
@@ -505,7 +505,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .hero__btn {
     padding: .65em 3.2em;
     font-size: .65em;
@@ -523,7 +523,7 @@ p {
   z-index: -10;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills {
     background-image: url(../imgs/whitebg-web.png);
     background-size: cover;
@@ -541,7 +541,7 @@ p {
   margin-top: 1.1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills__title {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -553,13 +553,13 @@ p {
   text-align: left;
 }
 
-@media (min-width: 411px) {
+@media (min-width: 400px) {
   .skills__list {
     margin-left: 20px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills__list {
     font-size: 17px;
     margin: auto 0;
@@ -572,7 +572,7 @@ p {
   border-left: 2px solid #FFCC00;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills__items h3 {
     padding-left: 11px;
   }
@@ -583,7 +583,7 @@ p {
   padding-left: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills__items img {
     height: 26px;
   }
@@ -599,7 +599,7 @@ p {
   height: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills__items--react img {
     height: 18px;
   }
@@ -618,7 +618,7 @@ p {
   margin-bottom: 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .projects__title {
     font-size: 3em;
   }
@@ -641,13 +641,13 @@ p {
   z-index: -1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .projects__title:after {
     width: 450px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .projects__container {
     display: -ms-grid;
     display: grid;
@@ -669,7 +669,7 @@ p {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .projects__tile {
     margin: .5em;
     font-size: 20px;
@@ -689,7 +689,7 @@ p {
   }
 }
 
-@media (min-width: 411px) {
+@media (min-width: 400px) {
   .projects__tile--title {
     width: calc(100% - 120px);
     margin: 4px 0 15px;
@@ -789,7 +789,7 @@ p {
   z-index: -6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .message {
     display: -ms-grid;
     display: grid;
@@ -817,7 +817,7 @@ p {
   font-size: .7em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .message h3 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -831,7 +831,7 @@ p {
   padding: 60px 30px 90px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about {
     max-width: 600px;
     margin: auto;
@@ -847,7 +847,7 @@ p {
   width: calc(100vw - 70%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about__photo {
     -o-object-fit: contain;
        object-fit: contain;
@@ -856,7 +856,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about__info {
     text-align: left;
     margin-left: 1em;
@@ -873,7 +873,7 @@ p {
   font-weight: normal;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about__name {
     font-size: 1.6em;
     line-height: .1em;
@@ -891,7 +891,7 @@ p {
   border-bottom: solid 1.5px #ffe680;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about__name:after {
     content: "";
     width: 198px;
@@ -906,7 +906,7 @@ p {
   font-size: .6em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about__school {
     font-size: .7em;
     line-height: 1.1em;
@@ -923,7 +923,7 @@ p {
           justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .about__list {
     float: left;
     margin-top: 0;

@@ -19,9 +19,9 @@ $light-blue: #22D1EE;
 $yellow: #FFCC00;
 
 $iphonese: 320px;
-$iphone6: 375px;
-$pixel: 411px;
-$ipad: 768px;
+$iphone6: 360px;
+$pixel: 400px;
+$ipad: 750px;
 
 @mixin iphonese{
     @media (min-width: #{$iphonese}){
