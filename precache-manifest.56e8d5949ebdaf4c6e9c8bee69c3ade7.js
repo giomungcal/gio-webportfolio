@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "411a42a4357033ff77d8dcc02b3e5c55",
+    "revision": "28bbe1b5d2fa2950339513dca9f56098",
     "url": "/gio-webportfolio/index.html"
   },
   {
-    "revision": "35ac0b57cda5741f7f73",
-    "url": "/gio-webportfolio/static/css/main.5cf15f40.chunk.css"
+    "revision": "15dba838eb654e684fcc",
+    "url": "/gio-webportfolio/static/css/main.83c274fb.chunk.css"
   },
   {
     "revision": "34f4a4826e19862b7a77",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gio-webportfolio/static/js/2.de616e2b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "35ac0b57cda5741f7f73",
+    "revision": "15dba838eb654e684fcc",
     "url": "/gio-webportfolio/static/js/main.0baa501e.chunk.js"
   },
   {

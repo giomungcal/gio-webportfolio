@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gio-webportfolio/precache-manifest.5665c7de79423664d5c3d91dc20c7766.js"
+  "/gio-webportfolio/precache-manifest.56e8d5949ebdaf4c6e9c8bee69c3ade7.js"
 );
 
 self.addEventListener('message', (event) => {
