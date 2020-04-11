@@ -44,19 +44,21 @@ import gmail from './imgs/gmail.png'
 function App() {
   return (
     <React.Fragment>
-      <div className="container">
-        <div className="header">
-          <h1 className="header__title">gio-portfolio</h1>
-          <nav className="header__nav">
-            <a href="#"><img className="header__hamburger hide-desktop" src={hamburger} alt="hamburger"/></a>
-            <ul className="header__list show-desktop hide-mobile">
-              <li className="hide-desktop"><a href="#">X</a></li>
-              <li className="header__link header__link--active"><a href="#">home</a></li>
-              <li className="header__link"><a href="#">skills</a></li>
-              <li className="header__link"><a href="#">projects</a></li>
-              <li className="header__link"><a href="#">about</a></li>
-            </ul>
-          </nav>
+      <div className="container" id="home">
+        <div className="header__container">
+          <div className="header">
+            <h1 className="header__title">gio-portfolio</h1>
+            <nav className="header__nav">
+              <a href="#"><img className="header__hamburger hide-desktop" src={hamburger} alt="hamburger"/></a>
+              <ul className="header__list show-desktop hide-mobile">
+                <li className="hide-desktop"><a href="#home">X</a></li>
+                <li className="header__link header__link--active"><a href="#">home</a></li>
+                <li className="header__link"><a href="#skills">skills</a></li>
+                <li className="header__link"><a href="#projects">projects</a></li>
+                <li className="header__link"><a href="#about">about</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
   
         <div className="hero">
@@ -74,8 +76,9 @@ function App() {
         </div>
 
         <img className="hover show-desktop hide-mobile" src={hover} alt="hover"/>
-  
-        <div className="skills">
+        <a href="#home"><div className="topbtn">&nbsp;<span role="img">☝️</span>&nbsp;</div></a>
+
+        <div className="skills" id="skills">
           <h1 className="skills__title">Skills</h1>
           <ul className="skills__list">
             <li className="skills__items skills__items--web">
@@ -104,7 +107,7 @@ function App() {
           </ul>
         </div>
   
-        <div className="projects">
+        <div className="projects" id="projects">
           <h1 className="projects__title"><span>proj</span>ects<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>so</span> far..</h1>
           <div className="projects__container hide-desktop">
             <div className="projects__tile">
@@ -129,9 +132,6 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="projects__desktop hide-mobile show-desktop">
-            <h1>DESKTOP</h1>
-          </div>
         </div>
 
         <div className="message">
@@ -139,7 +139,7 @@ function App() {
           <h3>📠 +639953650731<br/>📪 gcmungcal@gmail.com</h3>
         </div>
 
-        <div className="about">
+        <div className="about" id="about">
           <img className="about__photo" src={idpic} alt="idpic"/>
           <div className="about__info">
             <h1 className="about__name">Giomar C. Mungcal</h1>

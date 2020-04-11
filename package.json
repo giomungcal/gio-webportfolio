@@ -2,6 +2,11 @@
   "name": "gio-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://giomungcal.github.io/gio-webportfolio",
+  "homepage": "http://giomungcal.github.io/react-gh-pages",
+  "homepage": "http://gitname.github.io/react-gh-pages",
+  "homepage": "http://gitname.github.io/gio-portfolio",
+  "homepage": "http://gitname.github.io/react-gh-pages",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -11,6 +16,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

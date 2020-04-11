@@ -1,7 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Product';
     src: local('Product'), url(../fonts/ProductSans.ttf) format('truetype');
-  }
+  
+}
 
 @font-face {
 font-family: 'ProductBold';
@@ -40,6 +45,55 @@ $ipad: 768px;
     @media (min-width: #{$ipad}){
         @content;
     }
+}
+
+@keyframes photoAnim{
+    0%{
+        transform: translateX(10%) translateY(-10%);
+        opacity: 0;
+        }
+    85%{
+        transform: translateX(-2%) translateY(2%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+@keyframes opacityAnim{
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes nameAnim{
+    0%{
+        transform: translateX(-100px);
+        opacity: .3;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes hoverAnim{
+    0%{
+        transform: translateY(0);
+        }
+    50%{
+        transform: translateY(20%);
+
+    }
+    100%{
+        transform: translateY(0);
+        }
 }
 
 body{
@@ -81,6 +135,48 @@ p{
 
 .hide-mobile{
     display: none;
+
+    @include ipad{
+        display: unset;
+    }
+}
+
+.hide-desktop{
+    @include ipad{
+        display: none;
+    }
+}
+
+.hover{
+    animation: hoverAnim 1s infinite 0s ease-in-out;
+
+    @include ipad{
+        margin-top: 2.2em;
+        height: 1.5em;
+    }
+}
+
+.topbtn{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255,255,255, .9);
+    border-radius: 50%;
+    padding: 15px;
+    z-index: -3;
+    font-size: .8em;
+
+    a{
+        color: white;
+    }
+    
+}
+
+.header__container{
+    // background-color: rgba(221, 221, 221, 0.4);
+    // position: sticky;
+    // top: 0;
+    // z-index: 3;
 }
 
 .header{
@@ -89,12 +185,15 @@ p{
     padding: 1.3em 1.3em;
     margin: .8em 1.2em;
 
+    animation: opacityAnim .5s forwards 0s ease-in-out;
+
     @include iphonese(){
         margin: .3em 1.2em .1em;
     }
 
     @include ipad{
-        width: 650px;
+        // width: 650px;
+        max-width: calc(100vw - 20%);
         margin: .8em auto .3em;
     }
 
@@ -111,6 +210,53 @@ p{
         @include iphonese(){
             height: 15px;
         }
+    }
+
+    &__list, a{
+        @include ipad{
+            color: #B4BBBC;
+            display: flex;
+            font-size: .83em;
+            transition: .3s;
+
+            &:hover{
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    &__link{
+        transition: .5s;
+        @include ipad{
+           padding-left: 2.1em;
+        }
+
+        &--active a{
+            color: white;
+            transition: .3s;
+
+            &:hover{
+                color: lighten($light-blue, 25%);
+            }
+        }
+
+        &:after{
+            content: "";
+            width: 0;
+            position: absolute;
+            transition: .45s;
+        }
+
+        &:hover
+            {
+                &:after{
+                    content: "";
+                    width: 30px;
+                    margin-right: -20px;
+                    border-bottom: solid 1px $yellow;
+                }
+            }
+        
     }
 }
 
@@ -146,6 +292,7 @@ p{
         grid-area: photo;
         width: calc(100vw - 30%);
         margin: auto;
+        z-index: 10;
 
         @include iphonese(){
             width: calc(100vw - 45%);
@@ -156,6 +303,8 @@ p{
             width: 100%;
             margin: 0 auto;
         }
+
+        animation: photoAnim .7s forwards 0s ease-in-out;
     }
 
     &__hi{
@@ -176,12 +325,16 @@ p{
         color: $light-blue;
         font-family: ProductBold;
 
+        animation: nameAnim .9s forwards 0s ease-in-out;
+
+
         &:before{
             content: "";
             background-color: white;
-            width:100%;
+            width: 522px;
             margin-top: -3px;
             height: 60px;
+            margin-left: -40px;
             z-index: -1;
             left: 0;
             right: 0;
@@ -289,7 +442,6 @@ p{
     @include ipad{
         background-image: url(../imgs/whitebg-web.png);
         background-size: cover;
-        margin-top: 1em;
         padding-top: 3.5em;
         padding-bottom: 1.1em;
 
@@ -548,6 +700,7 @@ p{
     border-top: solid 2px #FFCC00;
     border-bottom: solid 2px #FFCC00;
     text-align: center;
+    z-index: -6;
 
     @include ipad{
         display: grid;
@@ -585,7 +738,7 @@ p{
         max-width: 600px;
         margin: auto;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 45% 55%;
     }
 
     &__photo{
@@ -594,7 +747,7 @@ p{
 
         @include ipad{
             object-fit: contain;
-            width: 85%;
+            width: 80%;
             margin: auto;
         }
     }
@@ -634,7 +787,7 @@ p{
                 content: "";
                 width: 198px;
                 margin-top: 17px;
-                margin-right: 143px;
+                margin-right: 114px;
                 left: unset;
             }
         }
