@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/gio-webportfolio/static/css/main.83c274fb.chunk.css",
+    "main.css": "/gio-webportfolio/static/css/main.c9452cde.chunk.css",
     "main.js": "/gio-webportfolio/static/js/main.0baa501e.chunk.js",
     "main.js.map": "/gio-webportfolio/static/js/main.0baa501e.chunk.js.map",
     "runtime-main.js": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js",
@@ -8,9 +8,9 @@
     "static/js/2.de616e2b.chunk.js": "/gio-webportfolio/static/js/2.de616e2b.chunk.js",
     "static/js/2.de616e2b.chunk.js.map": "/gio-webportfolio/static/js/2.de616e2b.chunk.js.map",
     "index.html": "/gio-webportfolio/index.html",
-    "precache-manifest.56e8d5949ebdaf4c6e9c8bee69c3ade7.js": "/gio-webportfolio/precache-manifest.56e8d5949ebdaf4c6e9c8bee69c3ade7.js",
+    "precache-manifest.50af9071539cc1156b0e3713df178cb1.js": "/gio-webportfolio/precache-manifest.50af9071539cc1156b0e3713df178cb1.js",
     "service-worker.js": "/gio-webportfolio/service-worker.js",
-    "static/css/main.83c274fb.chunk.css.map": "/gio-webportfolio/static/css/main.83c274fb.chunk.css.map",
+    "static/css/main.c9452cde.chunk.css.map": "/gio-webportfolio/static/css/main.c9452cde.chunk.css.map",
     "static/js/2.de616e2b.chunk.js.LICENSE.txt": "/gio-webportfolio/static/js/2.de616e2b.chunk.js.LICENSE.txt",
     "static/media/main.css": "/gio-webportfolio/static/media/whitebg-web.3360d0a2.png",
     "static/media/cedula-title.png": "/gio-webportfolio/static/media/cedula-title.9ab6045f.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.81ef1ef7.js",
     "static/js/2.de616e2b.chunk.js",
-    "static/css/main.83c274fb.chunk.css",
+    "static/css/main.c9452cde.chunk.css",
     "static/js/main.0baa501e.chunk.js"
   ]
 }
