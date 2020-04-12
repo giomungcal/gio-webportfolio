@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gio-webportfolio/static/css/main.4a924ef2.chunk.css",
-    "main.js": "/gio-webportfolio/static/js/main.f89cca5c.chunk.js",
-    "main.js.map": "/gio-webportfolio/static/js/main.f89cca5c.chunk.js.map",
+    "main.css": "/gio-webportfolio/static/css/main.1407d006.chunk.css",
+    "main.js": "/gio-webportfolio/static/js/main.d0be5310.chunk.js",
+    "main.js.map": "/gio-webportfolio/static/js/main.d0be5310.chunk.js.map",
     "runtime-main.js": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js",
     "runtime-main.js.map": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js.map",
     "static/js/2.f1572c31.chunk.js": "/gio-webportfolio/static/js/2.f1572c31.chunk.js",
     "static/js/2.f1572c31.chunk.js.map": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.map",
     "index.html": "/gio-webportfolio/index.html",
-    "precache-manifest.30c5f6a7701a0ab8705360a9002ee24e.js": "/gio-webportfolio/precache-manifest.30c5f6a7701a0ab8705360a9002ee24e.js",
+    "precache-manifest.13ae853046ff6710ff0df47251cb4d01.js": "/gio-webportfolio/precache-manifest.13ae853046ff6710ff0df47251cb4d01.js",
     "service-worker.js": "/gio-webportfolio/service-worker.js",
-    "static/css/main.4a924ef2.chunk.css.map": "/gio-webportfolio/static/css/main.4a924ef2.chunk.css.map",
+    "static/css/main.1407d006.chunk.css.map": "/gio-webportfolio/static/css/main.1407d006.chunk.css.map",
     "static/js/2.f1572c31.chunk.js.LICENSE.txt": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.LICENSE.txt",
     "static/media/main.css": "/gio-webportfolio/static/media/whitebg-web.3360d0a2.png",
     "static/media/GioMungcal-CV.pdf": "/gio-webportfolio/static/media/GioMungcal-CV.bb0e8dc2.pdf",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.81ef1ef7.js",
     "static/js/2.f1572c31.chunk.js",
-    "static/css/main.4a924ef2.chunk.css",
-    "static/js/main.f89cca5c.chunk.js"
+    "static/css/main.1407d006.chunk.css",
+    "static/js/main.d0be5310.chunk.js"
   ]
 }
