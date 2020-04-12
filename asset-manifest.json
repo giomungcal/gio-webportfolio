@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gio-webportfolio/static/css/main.1407d006.chunk.css",
-    "main.js": "/gio-webportfolio/static/js/main.96cd7f12.chunk.js",
-    "main.js.map": "/gio-webportfolio/static/js/main.96cd7f12.chunk.js.map",
+    "main.js": "/gio-webportfolio/static/js/main.14051671.chunk.js",
+    "main.js.map": "/gio-webportfolio/static/js/main.14051671.chunk.js.map",
     "runtime-main.js": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js",
     "runtime-main.js.map": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js.map",
     "static/js/2.f1572c31.chunk.js": "/gio-webportfolio/static/js/2.f1572c31.chunk.js",
     "static/js/2.f1572c31.chunk.js.map": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.map",
     "index.html": "/gio-webportfolio/index.html",
-    "precache-manifest.04eab06e1905c4c1513d4cdd8086979b.js": "/gio-webportfolio/precache-manifest.04eab06e1905c4c1513d4cdd8086979b.js",
+    "precache-manifest.2afa665fd314d4d06d529dd2123719bd.js": "/gio-webportfolio/precache-manifest.2afa665fd314d4d06d529dd2123719bd.js",
     "service-worker.js": "/gio-webportfolio/service-worker.js",
     "static/css/main.1407d006.chunk.css.map": "/gio-webportfolio/static/css/main.1407d006.chunk.css.map",
     "static/js/2.f1572c31.chunk.js.LICENSE.txt": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.81ef1ef7.js",
     "static/js/2.f1572c31.chunk.js",
     "static/css/main.1407d006.chunk.css",
-    "static/js/main.96cd7f12.chunk.js"
+    "static/js/main.14051671.chunk.js"
   ]
 }
