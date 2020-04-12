@@ -32,7 +32,7 @@ const Projects = () => {
             {/* <img  className="projects__tile--scs" src={cedulaimgs} alt="cedula"/><br /> */}
             <div className="projects__tile--space">spacespacespacespacespacespace</div>
             <p><strong>Developed with <span><br />HTML, CSS, React JS <br /></span>Designed with <span className="adobexd">Adobe XD</span></strong><br /><br />
-            This is my personal web portfolio developed and designed with the collective knowledge i have of web developmment so far.<br/><br/> I've applied my self-directed learnings, ranging from the different principles of UI designing to typography and color scheming, also, this webpage is designed responsive for different viewports, without the use of any framework.<br /><br />Used SASS, BEM. React JS implemented with Context API, Hooks, and Router.
+            This is my personal web portfolio developed and designed with the collective knowledge i have of web developmment so far.<br/><br/> I've applied my self-directed learnings, ranging from the different principles of UI designing to typography and color scheming, also, this webpage is designed responsive for different viewports, without the use of any framework.<br /><br />Used SASS, and applied BEM practice.<br /><br /><i>All built from scratch.</i>
             </p>
             <br />
             <a className="projects__tile--repo" href="https://github.com/giomungcal/gio-webportfolio" target="_blank"  rel="noopener noreferrer">open <span>github</span><br />repository</a>
