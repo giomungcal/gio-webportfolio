@@ -1,3 +1,9 @@
+#gio-webportfolio
+
+This is my personal web portfolio made with create-react-app, and designed using Adobe XD, _all built from scratch_ applying practices such as BEM, using SASS.
+
+___
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
