@@ -202,20 +202,20 @@ p {
   }
 }
 
-.hover {
+.hoverimg {
   -webkit-animation: hoverAnim 1s infinite 0s ease-in-out;
           animation: hoverAnim 1s infinite 0s ease-in-out;
 }
 
 @media (min-width: 750px) {
-  .hover {
+  .hoverimg {
     margin-top: 2.2em;
     height: 1.5em;
   }
 }
 
 @media (min-width: 1000px) {
-  .hover {
+  .hoverimg {
     height: 1.3em;
   }
 }
@@ -578,8 +578,8 @@ p {
 .hero__btn--projects {
   background-color: #38437D;
   color: #22D1EE;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .hero__btn--projects:hover {
@@ -588,8 +588,8 @@ p {
 }
 
 .hero__btn--resume {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .hero__btn--resume:hover {
