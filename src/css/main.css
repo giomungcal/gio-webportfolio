@@ -793,12 +793,15 @@ p {
 .projects__tile {
   background-color: white;
   padding: .8em;
+  padding-bottom: 1em;
   color: #0E153A;
   margin-bottom: 2em;
   border-radius: 12px;
   -webkit-box-shadow: 0 -2px 10px #040611;
           box-shadow: 0 -2px 10px #040611;
   display: block;
+  position: relative;
+  cursor: pointer;
 }
 
 @media (min-width: 750px) {
@@ -840,6 +843,57 @@ p {
   margin: 0;
 }
 
+.projects__tile--repo {
+  visibility: hidden;
+  position: relative;
+}
+
+.projects__tile--repo:before {
+  content: "Repository";
+  visibility: visible;
+  position: absolute;
+  padding: .5em;
+  top: 0;
+  left: -3px;
+  width: 100%;
+  background-color: #0E153A;
+  color: #FFCC00;
+  font-size: .8em;
+  line-height: 1em;
+  border-radius: 20px;
+}
+
+@media (min-width: 810px) {
+  .projects__tile--repo {
+    visibility: visible;
+    color: #0E153A;
+    font-size: 2em;
+    border-radius: 12px;
+    line-height: .7em;
+    padding: 75% 0 0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+  }
+  .projects__tile--repo:before {
+    content: "";
+    visibility: hidden;
+  }
+  .projects__tile--repo span {
+    color: #FFCC00;
+  }
+  .projects__tile--repo:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
 .projects__tile p {
   font-size: .65em;
   margin: 0 10px;
@@ -861,7 +915,7 @@ p {
   background-image: url(../imgs/electroknight.png);
   background-size: contain;
   background-repeat: no-repeat;
-  color: wheat;
+  z-index: 5;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(2px 2px 2px #222);
 }
@@ -877,7 +931,7 @@ p {
   background-image: url(../imgs/Clogo.png);
   background-size: contain;
   background-repeat: no-repeat;
-  color: wheat;
+  z-index: 5;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(2px 2px 2px #222);
 }
@@ -885,15 +939,17 @@ p {
 .projects__tile:nth-child(3):before {
   content: "";
   position: absolute;
-  margin-left: -160px;
   margin-top: -30px;
   padding: 10px;
-  width: 80px;
-  height: 80px;
+  top: 20px;
+  left: 0;
+  padding: 10px;
+  width: 75px;
+  height: 75px;
   background-image: url(../imgs/giologo.PNG);
   background-size: contain;
   background-repeat: no-repeat;
-  color: wheat;
+  z-index: 5;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(2px 2px 2px #222);
 }
@@ -904,10 +960,6 @@ p {
 
 .projects__tile:nth-child(3) .adobexd {
   color: #FF26BE;
-}
-
-.projects__tile:last-child {
-  margin-bottom: 0;
 }
 
 .message {
