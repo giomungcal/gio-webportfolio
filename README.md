@@ -1,4 +1,4 @@
-#gio-webportfolio
+# gio-webportfolio
 
 This is my personal web portfolio made with create-react-app, and designed using Adobe XD, _all built from scratch_ applying practices such as BEM, using SASS.
 
