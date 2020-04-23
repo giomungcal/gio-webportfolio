@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/gio-webportfolio/static/css/main.1407d006.chunk.css",
-    "main.js": "/gio-webportfolio/static/js/main.0204153b.chunk.js",
-    "main.js.map": "/gio-webportfolio/static/js/main.0204153b.chunk.js.map",
+    "main.css": "/gio-webportfolio/static/css/main.301b24a6.chunk.css",
+    "main.js": "/gio-webportfolio/static/js/main.aca6182b.chunk.js",
+    "main.js.map": "/gio-webportfolio/static/js/main.aca6182b.chunk.js.map",
     "runtime-main.js": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js",
     "runtime-main.js.map": "/gio-webportfolio/static/js/runtime-main.81ef1ef7.js.map",
-    "static/js/2.f1572c31.chunk.js": "/gio-webportfolio/static/js/2.f1572c31.chunk.js",
-    "static/js/2.f1572c31.chunk.js.map": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.map",
+    "static/js/2.de616e2b.chunk.js": "/gio-webportfolio/static/js/2.de616e2b.chunk.js",
+    "static/js/2.de616e2b.chunk.js.map": "/gio-webportfolio/static/js/2.de616e2b.chunk.js.map",
     "index.html": "/gio-webportfolio/index.html",
-    "precache-manifest.15a702783111e8be24ec4f04506f1c46.js": "/gio-webportfolio/precache-manifest.15a702783111e8be24ec4f04506f1c46.js",
+    "precache-manifest.5d94aef332f9d622bf276e9231513190.js": "/gio-webportfolio/precache-manifest.5d94aef332f9d622bf276e9231513190.js",
     "service-worker.js": "/gio-webportfolio/service-worker.js",
-    "static/css/main.1407d006.chunk.css.map": "/gio-webportfolio/static/css/main.1407d006.chunk.css.map",
-    "static/js/2.f1572c31.chunk.js.LICENSE.txt": "/gio-webportfolio/static/js/2.f1572c31.chunk.js.LICENSE.txt",
+    "static/css/main.301b24a6.chunk.css.map": "/gio-webportfolio/static/css/main.301b24a6.chunk.css.map",
+    "static/js/2.de616e2b.chunk.js.LICENSE.txt": "/gio-webportfolio/static/js/2.de616e2b.chunk.js.LICENSE.txt",
     "static/media/main.css": "/gio-webportfolio/static/media/whitebg-web.3360d0a2.png",
-    "static/media/GioMungcal-CV.pdf": "/gio-webportfolio/static/media/GioMungcal-CV.bb0e8dc2.pdf",
+    "static/media/GioMungcal-CV.pdf": "/gio-webportfolio/static/media/GioMungcal-CV.aecc8c07.pdf",
     "static/media/cedula-title.png": "/gio-webportfolio/static/media/cedula-title.9ab6045f.png",
     "static/media/cedulaimgs.png": "/gio-webportfolio/static/media/cedulaimgs.07a90bb1.png",
     "static/media/ekimgs.png": "/gio-webportfolio/static/media/ekimgs.613962ab.png",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.81ef1ef7.js",
-    "static/js/2.f1572c31.chunk.js",
-    "static/css/main.1407d006.chunk.css",
-    "static/js/main.0204153b.chunk.js"
+    "static/js/2.de616e2b.chunk.js",
+    "static/css/main.301b24a6.chunk.css",
+    "static/js/main.aca6182b.chunk.js"
   ]
 }
